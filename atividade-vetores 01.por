@@ -1,55 +1,25 @@
 programa
 {
-	
+		
 	funcao inicio()
 	{
 		inteiro i = 0,anterior,recebe,Organizador[10],vetorOriginal[10] = {2,5,1,3,4,9,7,8,10,6}
 
-		enquanto (i < 10) {
-			se (vetorOriginal[i] == 10){
-			Organizador[0] = vetorOriginal[i]
+	
+		para(i; i < 10; i++){
+			inteiro contador = 0
+			para(inteiro x = 0; x < 10; x++){
+				se (vetorOriginal[i] < vetorOriginal[x]){
+					contador += 1
+				}
 			
 			}
-			senao se(vetorOriginal[i] == 9){
-			Organizador[1] = vetorOriginal[i]
+			Organizador[contador] = vetorOriginal[i]
 			
-			}
-			senao se(vetorOriginal[i] == 8){
-			Organizador[2] = vetorOriginal[i]
-			
-			}
-			senao se(vetorOriginal[i] == 7){
-			Organizador[3] = vetorOriginal[i]
-			
-			}
-			senao se(vetorOriginal[i] == 6){
-			Organizador[4] = vetorOriginal[i]
-			
-			}
-			senao se(vetorOriginal[i] == 5){
-			Organizador[5] = vetorOriginal[i]
-			
-			}
-			senao se(vetorOriginal[i] == 4){
-			Organizador[6] = vetorOriginal[i]
-			
-			}	
-			senao se(vetorOriginal[i] == 3){
-			Organizador[7] = vetorOriginal[i]
-			
-			}
-			senao se(vetorOriginal[i] == 2){
-			Organizador[8] = vetorOriginal[i]
-			
-			}
-			senao se(vetorOriginal[i] == 1){
-			Organizador[9] = vetorOriginal[i]
-			
-			}
-			
-		
-		i++
-	}
+		 
+		}
+
+	
 		para(inteiro x = 0; x < 10; x++){
 			vetorOriginal[x] = Organizador[x]
 		}
@@ -73,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 724; 
+ * @POSICAO-CURSOR = 349; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {Organizador, 6, 32, 11}-{vetorOriginal, 6, 48, 13};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
